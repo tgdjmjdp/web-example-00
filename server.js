@@ -8,7 +8,7 @@ hbs.registerPartials(__dirname + '/views/partials');
 
 app.set('view engine', 'hbs');
 
-app.use(expresss.static(__dirname + '/public'));
+app.use(expresss.static(__dirname));
 
 app.get('/', (req, res) => {
     res.render('home.hbs');
